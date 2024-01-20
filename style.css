@@ -1,8 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+
 :root {
 	--main-bg-color: #f0f0f0;
-	--primary-color: #00c900;
+	--bg-color: #1f1f1f;
+	--primary-color: #00af00;
+	--secondar-color: #ffc9ff;
 }
 
-html {
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
 	background-color: var(--main-bg-color);
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	max-width: 960px;
+	margin: auto;
+}
+
+body p {
+	line-height: 1.5em;
+}
+
+#logo {
+	text-indent: -1000px;
+	margin: 0;
+	display: block;
+	width: 240px;
+	height: 114px;
+	background-image: url('./assets/nature.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+}
+
+.container li {
+	flex-direction: row;
+	font-size: large;
+	margin-left: 30px;
+}
+
+.container a {
+	text-decoration: none;
+	color: var(--primary-color);
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+h1 {
+	padding-left: 20px;
+	color: var(--primary-color);
+}
+
+main > p {
+	margin: 20px;
+}
+
+h3 {
+	color: var(--primary-color);
+	text-align: center;
+	margin: 10px;
+}
+
+section p {
+	margin: 0 5px;
+	text-align: justify;
+}
+
+.sections {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	background-color: white;
+}
+
+.sections section {
+	width: auto;
+	padding: 10px;
+}
+
+.sections img {
+	width: 100%;
+}
+
+.sections p {
+	font-size: 0.8em;
+}
+
+footer {
+	text-align: start;
+	font-weight: 700;
+	color: var(--primary-color);
 }
