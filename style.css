@@ -94,6 +94,8 @@ section p {
 
 .sections img {
 	width: 100%;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 .sections p {
