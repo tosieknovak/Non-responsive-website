@@ -61,6 +61,20 @@ body p {
 	font-weight: 600;
 }
 
+nav a::after {
+	content: '';
+	display: block;
+	height: 5px;
+	background: var(--primary-color);
+	transform: scale(0,1);
+	transform-origin: left;
+	transition: transform ease-in-out 250ms; 
+}
+
+nav a:hover::after {
+	transform: scale(1,1);
+}
+
 h1 {
 	padding-left: 20px;
 	color: var(--primary-color);
@@ -103,7 +117,7 @@ section p {
 }
 
 footer {
-	text-align: start;
+	text-align: end;
 	font-weight: 700;
 	color: var(--primary-color);
 }
